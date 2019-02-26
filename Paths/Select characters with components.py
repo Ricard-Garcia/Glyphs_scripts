@@ -19,4 +19,6 @@ for thisGlyph in thisFont.glyphs:
 if affectedGlyphs:
 	thisFont.selection = affectedGlyphs
 else:
-	Message(title="No Components Found", message="Could not fond any components in the current master.", OKButton="Too bad")
+	Message(title="""
+		No Components Found", message="Could not fond any components in the current master.""",
+		OKButton="Too bad")
