@@ -56,6 +56,9 @@ for c in font.classes:
 # Loop through features
 codeFeatures += "\n\n# Features"
 
+codeFeatures = "# %s features" % (fNameParts[0])
+
+# Loop through features
 for fea in font.features:
 	# Name of the feature
 	#print("\n\nfeature %s {" % (fea.name))
@@ -71,6 +74,7 @@ for fea in font.features:
 	# Closing the feature
 	#print('}')
 	codeFeatures += '\n} %s' % (fea.name)
+	codeFeatures += '}'
 
 # Opening and writing the file
 newFile = open(NewfPath, 'w')
