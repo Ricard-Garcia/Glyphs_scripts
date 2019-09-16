@@ -65,6 +65,6 @@ for w in range(numberWords):
 	print(string)
 	
 
-	outputString += "%s" % string
+	outputString += "%s\n" % string
 
 Font.newTab(outputString)
